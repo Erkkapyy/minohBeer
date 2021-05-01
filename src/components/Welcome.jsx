@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
-import Picture from '../images/minohBeerTest.jpg';
+import React from 'react';
 
 const Welcome = () => {
   console.log('lol');
 
   return (
-    <div>
-      <h1>Welcome to the Minoh Beer MDR project</h1>
-      <img src={Picture} alt='testing images' />
+    <div style={{ textAlign: 'center' }}>
+      <h1>箕面ビールのプロジェクトへようこそ</h1>
     </div>
   );
 };
