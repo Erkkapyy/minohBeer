@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const Button = styled.button`
@@ -15,12 +15,12 @@ const Button = styled.button`
   `}
 `;
 
-const NextButton = ({ isSelected, onClick, disabled }) => {
+const NavigationButton = ({ isConfirmButton, onClick, disabled }) => {
   return (
-    <Button isSelected={isSelected} onClick={onClick} disabled={disabled}>
-      Next
+    <Button onClick={onClick} disabled={disabled}>
+      {isConfirmButton ? 'Confirm' : 'Next'}
     </Button>
   );
 };
 
-export default NextButton;
+export default NavigationButton;

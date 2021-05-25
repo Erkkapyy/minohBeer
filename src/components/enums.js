@@ -38,3 +38,11 @@ export const answers = [
     'QUESTION 5 FOURTH ANSWER',
   ],
 ];
+
+export const explanations = [
+  'FIRST EXPLANATION',
+  'SECOND EXPLANATION',
+  'THIRD EXPLANATION',
+  'FOURTH EXPLANATION',
+  'FIFTH EXPLANATION',
+];

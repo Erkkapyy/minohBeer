@@ -1,12 +1,12 @@
 import Welcome from './components/Welcome';
-import QuestionWrapper from './components/QuestionWrapper';
+import ContentWrapper from './components/ContentWrapper';
 import './App.css';
 
 const App = () => {
   return (
     <div>
       <Welcome />
-      <QuestionWrapper />
+      <ContentWrapper />
     </div>
   );
 };

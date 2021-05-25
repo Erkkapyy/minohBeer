@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const Button = styled.button`
@@ -14,9 +14,9 @@ const Button = styled.button`
   `}
 `;
 
-const AnswerButton = ({ buttonText, isSelected, onClick }) => {
+const AnswerButton = ({ buttonText, isSelected, onClick, disabled }) => {
   return (
-    <Button isSelected={isSelected} onClick={onClick}>
+    <Button isSelected={isSelected} onClick={onClick} disabled={disabled}>
       {buttonText}
     </Button>
   );

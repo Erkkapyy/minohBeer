@@ -1,14 +1,25 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
 import QuestionBox from './QuestionBox';
 import AnswerBox from './AnswerBox';
-import NextButton from './NextButton';
+import NavigationButton from './NavigationButton';
 import { questions, answers } from './enums';
 
-const QuestionScreen = ({ isVisible }) => {
-  const [activeQuestion, setActiveQuestion] = useState(0);
+const QuestionScreen = ({ isVisible, activeQuestion, switchView }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
-  console.log('active question index: ', activeQuestion);
+  const [confirmRequired, setConfirmRequired] = useState(true);
+  const [areAnswersDisabled, setAreAnswersDisabled] = useState(false);
+
+  const onConfirm = () => {
+    setConfirmRequired(false);
+    setAreAnswersDisabled(true);
+  };
+
+  const onNext = () => {
+    setSelectedAnswer(null);
+    setConfirmRequired(true);
+    setAreAnswersDisabled(false);
+    switchView();
+  };
 
   return (
     isVisible && (
@@ -19,12 +30,11 @@ const QuestionScreen = ({ isVisible }) => {
           answers={answers[activeQuestion] || []}
           selectedAnswer={selectedAnswer}
           setSelectedAnswer={setSelectedAnswer}
+          isDisabled={areAnswersDisabled}
         />
-        <NextButton
-          //do something to hacked index limitator
-          onClick={() =>
-            activeQuestion < 4 && setActiveQuestion(activeQuestion + 1)
-          }
+        <NavigationButton
+          isConfirmButton={confirmRequired}
+          onClick={confirmRequired ? () => onConfirm() : () => onNext()}
           disabled={selectedAnswer === null}
         />
       </>
