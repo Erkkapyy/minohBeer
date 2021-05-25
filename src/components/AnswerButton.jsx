@@ -12,11 +12,41 @@ const Button = styled.button`
   border-color: black;
   border-style: solid;
   `}
+
+  ${({ isCorrect, confirmRequired }) =>
+    isCorrect &&
+    !confirmRequired &&
+    `
+  border-color: green;
+  border-style: solid;
+  `}
+
+  ${({ isSelected, isCorrect, confirmRequired }) =>
+    isSelected &&
+    !isCorrect &&
+    !confirmRequired &&
+    `
+  border-color: red;
+  border-style: solid;
+  `}
 `;
 
-const AnswerButton = ({ buttonText, isSelected, onClick, disabled }) => {
+const AnswerButton = ({
+  buttonText,
+  isSelected,
+  onClick,
+  disabled,
+  isCorrect,
+  confirmRequired,
+}) => {
   return (
-    <Button isSelected={isSelected} onClick={onClick} disabled={disabled}>
+    <Button
+      isSelected={isSelected}
+      onClick={onClick}
+      disabled={disabled}
+      isCorrect={isCorrect}
+      confirmRequired={confirmRequired}
+    >
       {buttonText}
     </Button>
   );

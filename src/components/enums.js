@@ -39,6 +39,8 @@ export const answers = [
   ],
 ];
 
+export const correctAnswerNumbers = [0, 0, 0, 0, 0];
+
 export const explanations = [
   'FIRST EXPLANATION',
   'SECOND EXPLANATION',

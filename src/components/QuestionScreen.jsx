@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import QuestionBox from './QuestionBox';
 import AnswerBox from './AnswerBox';
 import NavigationButton from './NavigationButton';
-import { questions, answers } from './enums';
+import { questions } from './enums';
 
 const QuestionScreen = ({ isVisible, activeQuestion, switchView }) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -26,11 +26,11 @@ const QuestionScreen = ({ isVisible, activeQuestion, switchView }) => {
       <>
         <QuestionBox question={questions[activeQuestion]} />
         <AnswerBox
-          //fix this empty array hack
-          answers={answers[activeQuestion] || []}
+          activeQuestion={activeQuestion}
           selectedAnswer={selectedAnswer}
           setSelectedAnswer={setSelectedAnswer}
           isDisabled={areAnswersDisabled}
+          confirmRequired={confirmRequired}
         />
         <NavigationButton
           isConfirmButton={confirmRequired}
