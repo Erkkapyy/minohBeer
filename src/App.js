@@ -1,12 +1,12 @@
 import Welcome from './components/Welcome';
-import CarouselContainer from './components/CarouselContainer';
+import QuestionWrapper from './components/QuestionWrapper';
 import './App.css';
 
 const App = () => {
   return (
     <div>
       <Welcome />
-      <CarouselContainer />
+      <QuestionWrapper />
     </div>
   );
 };
