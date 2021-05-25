@@ -5,7 +5,7 @@ const Welcome = () => {
 
   return (
     <div style={{ textAlign: 'center' }}>
-      <h1>箕面ビールのプロジェクトへようこそ</h1>
+      <h1>箕面ビールクイズ</h1>
     </div>
   );
 };

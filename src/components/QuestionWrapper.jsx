@@ -11,7 +11,7 @@ const Container = styled.div`
 const QuestionWrapper = () => {
   return (
     <Container>
-      <QuestionScreen />
+      <QuestionScreen isVisible={true} />
     </Container>
   );
 };

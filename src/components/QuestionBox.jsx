@@ -8,12 +8,11 @@ const Container = styled.h1`
   background-color: coral;
   border-color: black;
   border-style: solid;
-  height: 100px;
-  width: 800px;
+  padding: 40px;
 `;
 
-const QuestionBox = () => {
-  return <Container>Question</Container>;
+const QuestionBox = ({ question }) => {
+  return <Container>{question}</Container>;
 };
 
 export default QuestionBox;

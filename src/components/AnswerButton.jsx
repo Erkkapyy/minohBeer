@@ -14,10 +14,10 @@ const Button = styled.button`
   `}
 `;
 
-const AnswerButton = ({ isSelected, onClick }) => {
+const AnswerButton = ({ buttonText, isSelected, onClick }) => {
   return (
     <Button isSelected={isSelected} onClick={onClick}>
-      Answer
+      {buttonText}
     </Button>
   );
 };

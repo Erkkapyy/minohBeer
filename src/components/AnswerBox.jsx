@@ -8,17 +8,17 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const AnswerBox = () => {
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
-
+const AnswerBox = ({ answers, selectedAnswer, setSelectedAnswer }) => {
   return (
     <>
       <Container>
         <AnswerButton
+          buttonText={answers[0]}
           isSelected={selectedAnswer === 0}
           onClick={() => setSelectedAnswer(0)}
         />
         <AnswerButton
+          buttonText={answers[1]}
           isSelected={selectedAnswer === 1}
           onClick={() => setSelectedAnswer(1)}
         />
@@ -26,10 +26,12 @@ const AnswerBox = () => {
 
       <Container>
         <AnswerButton
+          buttonText={answers[2]}
           isSelected={selectedAnswer === 2}
           onClick={() => setSelectedAnswer(2)}
         />
         <AnswerButton
+          buttonText={answers[3]}
           isSelected={selectedAnswer === 3}
           onClick={() => setSelectedAnswer(3)}
         />
