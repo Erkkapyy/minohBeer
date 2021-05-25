@@ -1,9 +1,9 @@
 export const questions = [
-  'FIRST QUESTION',
-  'SECOND QUESTION',
-  'THIRD QUESTION',
-  'FOURTH QUESTION',
-  'FIFTH QUESTION',
+  'QUESTION 1/5',
+  'QUESTION 2/5',
+  'QUESTION 3/5',
+  'QUESTION 4/5',
+  'QUESTION 5/5',
 ];
 
 export const answers = [
