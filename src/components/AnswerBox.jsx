@@ -16,7 +16,7 @@ const AnswerBox = ({
   isDisabled,
   confirmRequired,
 }) => {
-  //fix this empty array hack
+  //fix this empty array hack (no need to fix(?))
   const activeQuestionAnswers = answers[activeQuestion] || [];
   return (
     <>
