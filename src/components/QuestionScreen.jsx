@@ -2,9 +2,15 @@ import React, { useState } from 'react';
 import QuestionBox from './QuestionBox';
 import AnswerBox from './AnswerBox';
 import NavigationButton from './NavigationButton';
-import { questions } from './enums';
+import { questions, correctAnswerNumbers } from './enums';
 
-const QuestionScreen = ({ isVisible, activeQuestion, switchView }) => {
+const QuestionScreen = ({
+  isVisible,
+  activeQuestion,
+  switchView,
+  score,
+  setScore,
+}) => {
   const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [confirmRequired, setConfirmRequired] = useState(true);
   const [areAnswersDisabled, setAreAnswersDisabled] = useState(false);
@@ -12,6 +18,9 @@ const QuestionScreen = ({ isVisible, activeQuestion, switchView }) => {
   const onConfirm = () => {
     setConfirmRequired(false);
     setAreAnswersDisabled(true);
+    if (selectedAnswer === correctAnswerNumbers[activeQuestion]) {
+      setScore(score + 1);
+    }
   };
 
   const onNext = () => {
@@ -22,7 +31,8 @@ const QuestionScreen = ({ isVisible, activeQuestion, switchView }) => {
   };
 
   return (
-    isVisible && (
+    isVisible &&
+    activeQuestion < questions.length && (
       <>
         <QuestionBox question={questions[activeQuestion]} />
         <AnswerBox
@@ -32,6 +42,7 @@ const QuestionScreen = ({ isVisible, activeQuestion, switchView }) => {
           isDisabled={areAnswersDisabled}
           confirmRequired={confirmRequired}
         />
+
         <NavigationButton
           isConfirmButton={confirmRequired}
           onClick={confirmRequired ? () => onConfirm() : () => onNext()}

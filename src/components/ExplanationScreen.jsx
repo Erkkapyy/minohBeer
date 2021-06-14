@@ -20,10 +20,10 @@ const ExplanationScreen = ({
   setActiveQuestion,
 }) => {
   const onClick = () => {
-    if (activeQuestion < questions.length - 1) {
-      setActiveQuestion(activeQuestion + 1);
-      switchView();
-    }
+    // if (activeQuestion < questions.length - 1) {
+    setActiveQuestion(activeQuestion + 1);
+    switchView();
+    // }
   };
 
   return (

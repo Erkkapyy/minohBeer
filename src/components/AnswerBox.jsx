@@ -22,7 +22,7 @@ const AnswerBox = ({
     <>
       <Container>
         <AnswerButton
-          buttonText={activeQuestionAnswers[0]}
+          buttonContent={activeQuestionAnswers[0]}
           isSelected={selectedAnswer === 0}
           onClick={() => setSelectedAnswer(0)}
           disabled={isDisabled}
@@ -30,7 +30,7 @@ const AnswerBox = ({
           confirmRequired={confirmRequired}
         />
         <AnswerButton
-          buttonText={activeQuestionAnswers[1]}
+          buttonContent={activeQuestionAnswers[1]}
           isSelected={selectedAnswer === 1}
           onClick={() => setSelectedAnswer(1)}
           disabled={isDisabled}
@@ -41,7 +41,7 @@ const AnswerBox = ({
 
       <Container>
         <AnswerButton
-          buttonText={activeQuestionAnswers[2]}
+          buttonContent={activeQuestionAnswers[2]}
           isSelected={selectedAnswer === 2}
           onClick={() => setSelectedAnswer(2)}
           disabled={isDisabled}
@@ -49,7 +49,7 @@ const AnswerBox = ({
           confirmRequired={confirmRequired}
         />
         <AnswerButton
-          buttonText={activeQuestionAnswers[3]}
+          buttonContent={activeQuestionAnswers[3]}
           isSelected={selectedAnswer === 3}
           onClick={() => setSelectedAnswer(3)}
           disabled={isDisabled}

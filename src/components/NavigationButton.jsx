@@ -5,7 +5,8 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  min-width: 300px;
+  min-height: 100px;
 
   ${({ isSelected }) =>
     isSelected &&

@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   // background-color: #428bca;
-  padding: 90px;
+  min-width: 150px;
+  min-height: 100px;
   margin: 50px;
 
   ${({ isSelected }) =>
@@ -32,7 +33,7 @@ const Button = styled.button`
 `;
 
 const AnswerButton = ({
-  buttonText,
+  buttonContent,
   isSelected,
   onClick,
   disabled,
@@ -47,7 +48,8 @@ const AnswerButton = ({
       isCorrect={isCorrect}
       confirmRequired={confirmRequired}
     >
-      {buttonText}
+      {buttonContent.isImage && <img src={buttonContent.img}></img>}
+      {!buttonContent.isImage && buttonContent.text}
     </Button>
   );
 };
