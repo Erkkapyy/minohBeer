@@ -46,7 +46,7 @@ export const answers = [
     },
     {
       isImage: false,
-      text: '箕面',
+      text: '大坂',
       img: null,
     },
     {
@@ -90,17 +90,17 @@ export const answers = [
     },
     {
       isImage: false,
-      text: '33',
+      text: '5',
       img: null,
     },
     {
       isImage: false,
-      text: '130',
+      text: '10',
       img: null,
     },
     {
       isImage: false,
-      text: '330',
+      text: '8',
       img: null,
     },
   ],

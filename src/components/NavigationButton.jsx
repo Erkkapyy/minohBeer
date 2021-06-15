@@ -19,7 +19,7 @@ const Button = styled.button`
 const NavigationButton = ({ isConfirmButton, onClick, disabled }) => {
   return (
     <Button onClick={onClick} disabled={disabled}>
-      {isConfirmButton ? 'Confirm' : 'Next'}
+      {isConfirmButton ? '確認' : '次へ'}
     </Button>
   );
 };
