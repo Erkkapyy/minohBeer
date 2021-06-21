@@ -11,12 +11,10 @@ const Button = styled.button`
   min-height: 40px;
   margin: auto;
   margin-bottom: 50px;
-  padding: 0px;
   border-style: solid;
   border-color: #d3d3d3;
   border-width: 3px;
   -webkit-appearance: none;
-  -webkit-border-radius: 0px;
   border-radius: 0px;
 
   ${({ disabled }) =>

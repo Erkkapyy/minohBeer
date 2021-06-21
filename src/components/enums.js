@@ -154,7 +154,7 @@ export const explanations = [
   {
     hasVideo: true,
     text: '箕面ビールは６種と7種の季節限定で販売しています。',
-    videoId: '9jK-NcRmVcw',
+    videoId: 'HPd2hiYreyc',
   },
   {
     hasVideo: true,
@@ -164,6 +164,6 @@ export const explanations = [
       'たくさんの金賞を受賞しています。' +
       '\n' +
       '箕面ビールは今日本全国で買えるので、ぜひ飲んで箕面を味わってみてください。',
-    videoId: 'FTQbiNvZqaY',
+    videoId: 'Nf5rGD7NdqU',
   },
 ];
