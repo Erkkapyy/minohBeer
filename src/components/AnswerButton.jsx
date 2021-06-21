@@ -5,7 +5,7 @@ const Button = styled.button`
   // background-color: #428bca;
   min-width: 150px;
   min-height: 100px;
-  margin: 50px;
+  // margin: auto;
 
   ${({ isSelected }) =>
     isSelected &&

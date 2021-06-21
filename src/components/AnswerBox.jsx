@@ -4,6 +4,10 @@ import AnswerButton from './AnswerButton';
 import { answers, correctAnswerNumbers } from './enums';
 
 const Container = styled.div`
+  margin-bottom: 50px;
+`;
+
+const AnswerRow = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,8 +23,8 @@ const AnswerBox = ({
   //fix this empty array hack (no need to fix(?))
   const activeQuestionAnswers = answers[activeQuestion] || [];
   return (
-    <>
-      <Container>
+    <Container>
+      <AnswerRow>
         <AnswerButton
           buttonContent={activeQuestionAnswers[0]}
           isSelected={selectedAnswer === 0}
@@ -37,9 +41,9 @@ const AnswerBox = ({
           isCorrect={correctAnswerNumbers[activeQuestion] === 1}
           confirmRequired={confirmRequired}
         />
-      </Container>
+      </AnswerRow>
 
-      <Container>
+      <AnswerRow>
         <AnswerButton
           buttonContent={activeQuestionAnswers[2]}
           isSelected={selectedAnswer === 2}
@@ -56,8 +60,8 @@ const AnswerBox = ({
           isCorrect={correctAnswerNumbers[activeQuestion] === 3}
           confirmRequired={confirmRequired}
         />
-      </Container>
-    </>
+      </AnswerRow>
+    </Container>
   );
 };
 
