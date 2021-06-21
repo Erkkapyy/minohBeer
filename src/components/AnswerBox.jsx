@@ -4,7 +4,7 @@ import AnswerButton from './AnswerButton';
 import { answers, correctAnswerNumbers } from './enums';
 
 const Container = styled.div`
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 `;
 
 const AnswerRow = styled.div`

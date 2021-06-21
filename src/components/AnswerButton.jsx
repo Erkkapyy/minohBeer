@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Button = styled.button`
-  // background-color: #428bca;
   width: 150px;
   height: 150px;
   min-width: 50px;
@@ -10,7 +9,8 @@ const Button = styled.button`
   margin: 5px;
   padding: 0px;
   border-style: solid;
-  border-color: grey;
+  border-color: #d3d3d3;
+  border-width: 3px;
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
   border-radius: 0px;

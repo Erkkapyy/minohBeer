@@ -13,7 +13,8 @@ const Button = styled.button`
   margin-bottom: 50px;
   padding: 0px;
   border-style: solid;
-  border-color: grey;
+  border-color: #d3d3d3;
+  border-width: 3px;
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
   border-radius: 0px;
