@@ -12,12 +12,13 @@ const Button = styled.button`
   margin: auto;
   margin-bottom: 50px;
   padding: 0px;
+  border-style: solid;
+  border-color: light-grey;
 
-  ${({ isSelected }) =>
-    isSelected &&
+  ${({ disabled }) =>
+    !disabled &&
     `
   border-color: black;
-  border-style: solid;
   `}
 `;
 

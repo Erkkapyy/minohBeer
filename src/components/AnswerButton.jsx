@@ -9,12 +9,13 @@ const Button = styled.button`
   min-height: 50px;
   margin: 5px;
   padding: 0px;
+  border-style: solid;
+  border-color: light-grey;
 
   ${({ isSelected }) =>
     isSelected &&
     `
   border-color: black;
-  border-style: solid;
   `}
 
   ${({ isCorrect, confirmRequired }) =>
@@ -22,7 +23,6 @@ const Button = styled.button`
     !confirmRequired &&
     `
   border-color: green;
-  border-style: solid;
   `}
 
   ${({ isSelected, isCorrect, confirmRequired }) =>
@@ -31,7 +31,6 @@ const Button = styled.button`
     !confirmRequired &&
     `
   border-color: red;
-  border-style: solid;
   `}
 `;
 
