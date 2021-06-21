@@ -148,17 +148,22 @@ export const explanations = [
   },
   {
     hasVideo: false,
-    text: '説明 3',
+    text: '箕面ビールは、大阪府の自然豊かな箕面という市で1996年から生産されています',
     videoUrl: null,
   },
   {
     hasVideo: false,
-    text: '説明 4',
+    text: '箕面ビールは６種と7種の季節限定で販売しています。',
     videoUrl: null,
   },
   {
     hasVideo: false,
-    text: '説明 5',
+    text:
+      '代表的な味は　箕面ビールスタウト　です。' +
+      '\n' +
+      'たくさんの金賞を受賞しています。' +
+      '\n' +
+      '箕面ビールは今日本全国で買えるので、ぜひ飲んで箕面を味わってみてください。',
     videoUrl: null,
   },
 ];

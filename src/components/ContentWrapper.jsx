@@ -9,6 +9,8 @@ const Container = styled.div`
   display: grid;
   align-items: center;
   justify-content: center;
+  margin-left: 25px;
+  margin-right: 25px;
 `;
 
 const ContentWrapper = () => {

@@ -3,9 +3,11 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   // background-color: #428bca;
-  min-width: 150px;
-  min-height: 100px;
-  // margin: auto;
+  width: 150px;
+  height: 150px;
+  min-width: 50px;
+  min-height: 50px;
+  margin: 5px;
 
   ${({ isSelected }) =>
     isSelected &&
@@ -32,6 +34,12 @@ const Button = styled.button`
   `}
 `;
 
+const Img = styled.img`
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+`;
+
 const AnswerButton = ({
   buttonContent,
   isSelected,
@@ -48,7 +56,7 @@ const AnswerButton = ({
       isCorrect={isCorrect}
       confirmRequired={confirmRequired}
     >
-      {buttonContent.isImage && <img src={buttonContent.img}></img>}
+      {buttonContent.isImage && <Img src={buttonContent.img} />}
       {!buttonContent.isImage && buttonContent.text}
     </Button>
   );
