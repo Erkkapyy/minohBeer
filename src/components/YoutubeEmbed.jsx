@@ -7,6 +7,7 @@ const YoutubeEmbedDiv = styled.div`
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
+  margin-bottom: 50px;
 `;
 
 const YoutubeEmbedIframe = styled.iframe`

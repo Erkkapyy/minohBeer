@@ -133,7 +133,12 @@ export const correctAnswerNumbers = [3, 1, 1, 0, 2];
 export const explanations = [
   {
     hasVideo: true,
-    text: '説明 1',
+    text:
+      '山に囲まれている箕面市は、昔猿がたくさん住んでいる場所でした。' +
+      '\n' +
+      'そのため、箕面市の代表的な動物は猿となりました。' +
+      '\n' +
+      'したがって、箕面ビールの瓶には可愛いお猿さんがいます。',
     videoUrl: 'dQw4w9WgXcQ',
   },
   {

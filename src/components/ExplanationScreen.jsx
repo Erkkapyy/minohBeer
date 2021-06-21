@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { explanations, questions } from './enums';
+import { explanations } from './enums';
 import NavigationButton from './NavigationButton';
 import YoutubeEmbed from './YoutubeEmbed';
 
@@ -29,7 +29,9 @@ const ExplanationScreen = ({
     isVisible && (
       <>
         <Container>
-          <div>{explanations[activeQuestion].text}</div>
+          <p style={{ whiteSpace: 'pre-wrap' }}>
+            {explanations[activeQuestion].text}
+          </p>
         </Container>
         {explanations[activeQuestion].hasVideo && (
           <YoutubeEmbed embedId={explanations[activeQuestion].videoUrl} />
