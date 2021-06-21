@@ -11,8 +11,9 @@ const Button = styled.button`
   padding: 0px;
   border-style: solid;
   border-color: light-grey;
-  border-radius: 0px 0px 0px 0px;
   &-webkit-appearance: none;
+  &-webkit-border-radius: 0px;
+  border-radius: 0px;
 
   ${({ isSelected }) =>
     isSelected &&
