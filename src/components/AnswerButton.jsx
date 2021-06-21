@@ -8,6 +8,7 @@ const Button = styled.button`
   min-width: 50px;
   min-height: 50px;
   margin: 5px;
+  padding: 0;
 
   ${({ isSelected }) =>
     isSelected &&
