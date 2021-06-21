@@ -139,31 +139,31 @@ export const explanations = [
       'そのため、箕面市の代表的な動物は猿となりました。' +
       '\n' +
       'したがって、箕面ビールの瓶には可愛いお猿さんがいます。',
-    videoUrl: 'dQw4w9WgXcQ',
+    videoId: 'dQw4w9WgXcQ',
   },
   {
     hasVideo: false,
     text: '説明 2',
-    videoUrl: null,
+    videoId: null,
   },
   {
     hasVideo: false,
     text: '箕面ビールは、大阪府の自然豊かな箕面という市で1996年から生産されています',
-    videoUrl: null,
+    videoId: null,
   },
   {
-    hasVideo: false,
+    hasVideo: true,
     text: '箕面ビールは６種と7種の季節限定で販売しています。',
-    videoUrl: null,
+    videoId: '9jK-NcRmVcw',
   },
   {
-    hasVideo: false,
+    hasVideo: true,
     text:
       '代表的な味は　箕面ビールスタウト　です。' +
       '\n' +
       'たくさんの金賞を受賞しています。' +
       '\n' +
       '箕面ビールは今日本全国で買えるので、ぜひ飲んで箕面を味わってみてください。',
-    videoUrl: null,
+    videoId: 'FTQbiNvZqaY',
   },
 ];

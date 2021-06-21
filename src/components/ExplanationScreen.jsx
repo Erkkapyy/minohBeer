@@ -34,7 +34,7 @@ const ExplanationScreen = ({
           </p>
         </Container>
         {explanations[activeQuestion].hasVideo && (
-          <YoutubeEmbed embedId={explanations[activeQuestion].videoUrl} />
+          <YoutubeEmbed embedId={explanations[activeQuestion].videoId} />
         )}
         <NavigationButton onClick={() => onClick()} />
       </>
