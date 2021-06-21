@@ -139,7 +139,7 @@ export const explanations = [
       'そのため、箕面市の代表的な動物は猿となりました。' +
       '\n' +
       'したがって、箕面ビールの瓶には可愛いお猿さんがいます。',
-    videoId: 'dQw4w9WgXcQ',
+    videoId: 'hxAVHS1218Y',
   },
   {
     hasVideo: false,
@@ -154,7 +154,7 @@ export const explanations = [
   {
     hasVideo: true,
     text: '箕面ビールは６種と7種の季節限定で販売しています。',
-    videoId: 'HPd2hiYreyc',
+    videoId: 'LsIeOHXgY-8',
   },
   {
     hasVideo: true,
@@ -164,6 +164,6 @@ export const explanations = [
       'たくさんの金賞を受賞しています。' +
       '\n' +
       '箕面ビールは今日本全国で買えるので、ぜひ飲んで箕面を味わってみてください。',
-    videoId: 'Nf5rGD7NdqU',
+    videoId: 'PYqHxOgCrNc',
   },
 ];
