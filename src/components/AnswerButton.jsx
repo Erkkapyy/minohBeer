@@ -10,9 +10,9 @@ const Button = styled.button`
   margin: 5px;
   padding: 0px;
   border-style: solid;
-  border-color: light-grey;
-  &::-webkit-appearance: none;
-  &::-webkit-border-radius: 0px;
+  border-color: grey;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
   border-radius: 0px;
 
   ${({ isSelected }) =>
