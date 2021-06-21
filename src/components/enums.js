@@ -46,7 +46,7 @@ export const answers = [
     },
     {
       isImage: false,
-      text: '大坂',
+      text: '大阪',
       img: null,
     },
     {
