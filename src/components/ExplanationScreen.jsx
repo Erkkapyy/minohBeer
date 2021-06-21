@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { explanations, questions } from './enums';
 import NavigationButton from './NavigationButton';
+import YoutubeEmbed from './YoutubeEmbed';
 
 const Container = styled.div`
   display: flex;
@@ -27,7 +28,12 @@ const ExplanationScreen = ({
   return (
     isVisible && (
       <>
-        <Container>{explanations[activeQuestion]}</Container>
+        <Container>
+          <div>{explanations[activeQuestion].text}</div>
+        </Container>
+        {explanations[activeQuestion].hasVideo && (
+          <YoutubeEmbed embedId={explanations[activeQuestion].videoUrl} />
+        )}
         <NavigationButton onClick={() => onClick()} />
       </>
     )

@@ -130,4 +130,30 @@ export const answers = [
 
 export const correctAnswerNumbers = [3, 1, 1, 0, 2];
 
-export const explanations = ['説明 1', '説明 2', '説明 3', '説明 4', '説明 5'];
+export const explanations = [
+  {
+    hasVideo: true,
+    text: '説明 1',
+    videoUrl: 'dQw4w9WgXcQ',
+  },
+  {
+    hasVideo: false,
+    text: '説明 2',
+    videoUrl: null,
+  },
+  {
+    hasVideo: false,
+    text: '説明 3',
+    videoUrl: null,
+  },
+  {
+    hasVideo: false,
+    text: '説明 4',
+    videoUrl: null,
+  },
+  {
+    hasVideo: false,
+    text: '説明 5',
+    videoUrl: null,
+  },
+];
