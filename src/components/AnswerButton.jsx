@@ -4,8 +4,6 @@ import styled from 'styled-components';
 const Button = styled.button`
   width: 150px;
   height: 150px;
-  min-width: 50px;
-  min-height: 50px;
   margin: 5px;
   padding: 0px;
   border-style: solid;
@@ -57,6 +55,7 @@ const AnswerButton = ({
       disabled={disabled}
       isCorrect={isCorrect}
       confirmRequired={confirmRequired}
+      style={{ whiteSpace: 'pre-wrap' }}
     >
       {buttonContent.isImage && <Img src={buttonContent.img} />}
       {!buttonContent.isImage && buttonContent.text}

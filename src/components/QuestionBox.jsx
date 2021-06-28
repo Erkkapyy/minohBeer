@@ -12,7 +12,7 @@ const Container = styled.h1`
 `;
 
 const QuestionBox = ({ question }) => {
-  return <Container>{question}</Container>;
+  return <Container style={{ whiteSpace: 'pre-wrap' }}>{question}</Container>;
 };
 
 export default QuestionBox;

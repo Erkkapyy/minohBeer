@@ -4,14 +4,18 @@ import { explanations } from './enums';
 import NavigationButton from './NavigationButton';
 import YoutubeEmbed from './YoutubeEmbed';
 
-const Container = styled.div`
-  display: flex;
+export const ExplanationContainer = styled.div`
+  max-width: 600px;
+  max-height: 800px;
+  min-width: 50px;
+  min-height: 50px;
   align-items: center;
   justify-content: center;
+  text-align: center;
   border-color: black;
   border-style: solid;
   padding: 40px;
-  margin-bottom: 50px;
+  margin: 0px 25px 40px 25px;
 `;
 
 const ExplanationScreen = ({
@@ -28,11 +32,14 @@ const ExplanationScreen = ({
   return (
     isVisible && (
       <>
-        <Container>
+        <ExplanationContainer>
           <p style={{ whiteSpace: 'pre-wrap' }}>
-            {explanations[activeQuestion].text}
+            {explanations[activeQuestion].jText}
           </p>
-        </Container>
+          <p style={{ whiteSpace: 'pre-wrap' }}>
+            {explanations[activeQuestion].eText}
+          </p>
+        </ExplanationContainer>
         {explanations[activeQuestion].hasVideo && (
           <YoutubeEmbed embedId={explanations[activeQuestion].videoId} />
         )}

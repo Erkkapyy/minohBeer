@@ -8,11 +8,21 @@ import stout from '../images/stout.jpg';
 import imperialstout from '../images/imperialStout.jpg';
 
 export const questions = [
-  '質問 1/5: 箕面ビールのマスコットはどれですか？',
-  '質問 2/5: 箕面ビールはどこで作られましたか？',
-  '質問 3/5: 箕面ビールは何年に設立されましたか？',
-  '質問 4/5: 箕面ビールの種類はいくつありますか？',
-  '質問 5/5: 受賞歴が一番多い箕面ビールはどれですか？',
+  '質問 1/5: 箕面ビールのマスコットはどれですか？' +
+    '\n' +
+    'Which one of the following is the Minoh Beer mascot?',
+  '質問 2/5: 箕面ビールはどこで作られていますか？' +
+    '\n' +
+    'Where is Minoh Beer being made?',
+  '質問 3/5: 箕面ビールは何年に設立されましたか？' +
+    '\n' +
+    'In what year was the Minoh Beer company founded?',
+  '質問 4/5: 箕面ビールの種類はいくつありますか？' +
+    '\n' +
+    'How many types of beer does Minoh Beer have?',
+  '質問 5/5: 受賞歴が一番多い箕面ビールはどれですか？' +
+    '\n' +
+    'Which Minoh Beer received the most awards?',
 ];
 
 export const answers = [
@@ -41,22 +51,22 @@ export const answers = [
   [
     {
       isImage: false,
-      text: '東京',
+      text: '東京' + '\n' + 'Tokyo',
       img: null,
     },
     {
       isImage: false,
-      text: '大阪',
+      text: '大阪' + '\n' + 'Osaka',
       img: null,
     },
     {
       isImage: false,
-      text: '沖縄',
+      text: '沖縄' + '\n' + 'Okinawa',
       img: null,
     },
     {
       isImage: false,
-      text: '北海道',
+      text: '北海道' + '\n' + 'Hokkaido',
       img: null,
     },
   ],
@@ -133,37 +143,43 @@ export const correctAnswerNumbers = [3, 1, 1, 0, 2];
 export const explanations = [
   {
     hasVideo: true,
-    text:
+    jText:
       '山に囲まれている箕面市は、昔猿がたくさん住んでいる場所でした。' +
       '\n' +
       'そのため、箕面市の代表的な動物は猿となりました。' +
       '\n' +
       'したがって、箕面ビールの瓶には可愛いお猿さんがいます。',
+    eText: 'Explanation',
     videoId: 'hxAVHS1218Y',
   },
   {
     hasVideo: false,
-    text: '説明 2',
+    jText: '説明 2',
+    eText: 'Explanation',
     videoId: null,
   },
   {
     hasVideo: false,
-    text: '箕面ビールは、大阪府の自然豊かな箕面という市で1996年から生産されています',
+    jText:
+      '箕面ビールは、大阪府の自然豊かな箕面という市で1996年から生産されています',
+    eText: 'Explanation',
     videoId: null,
   },
   {
     hasVideo: true,
-    text: '箕面ビールは６種と7種の季節限定で販売しています。',
+    jText: '箕面ビールは６種と7種の季節限定で販売しています。',
+    eText: 'Explanation',
     videoId: 'LsIeOHXgY-8',
   },
   {
     hasVideo: true,
-    text:
-      '代表的な味は　箕面ビールスタウト　です。' +
+    jText:
+      '代表的な味は　箕面ビールスタウトです。' +
       '\n' +
       'たくさんの金賞を受賞しています。' +
       '\n' +
       '箕面ビールは今日本全国で買えるので、ぜひ飲んで箕面を味わってみてください。',
+    eText: 'Explanation',
     videoId: 'PYqHxOgCrNc',
   },
 ];

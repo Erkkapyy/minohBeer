@@ -26,8 +26,12 @@ const Button = styled.button`
 
 const NavigationButton = ({ isConfirmButton, onClick, disabled }) => {
   return (
-    <Button onClick={onClick} disabled={disabled}>
-      {isConfirmButton ? '確認' : '次へ'}
+    <Button
+      onClick={onClick}
+      disabled={disabled}
+      style={{ whiteSpace: 'pre-wrap' }}
+    >
+      {isConfirmButton ? '確認' + '\n' + 'Confirm' : '次へ' + '\n' + 'Next'}
     </Button>
   );
 };
