@@ -156,12 +156,12 @@ export const explanations = [
     videoId: null,
   },
   {
-    hasVideo: false,
+    hasVideo: true,
     jText:
       '箕面ビールは、大阪府の自然豊かな箕面という市で1996年から生産されています。',
     eText:
       'Minoh Beer has been produced in a city rich in nature called Minoh, in Osaka Japan since the year 1996.',
-    videoId: null,
+    videoId: 'Q_pUnQYpbco',
   },
   {
     hasVideo: true,
