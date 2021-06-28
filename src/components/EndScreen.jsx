@@ -27,10 +27,11 @@ const EndScreen = ({ score }) => {
             is known for its abundance in nature. Since Minoh had a lot of
             monkey habitats, it has become Minoh’s representative animal.
             Therefore, Minoh beers’ packages also have adorable monkeys on them.
-            Minoh has 6 regular beers and also 7 types of special season beers
-            for a limited period. Stout is considered to be a representative of
-            Minoh beer and has also won many awards. You can buy Minoh beer
-            anywhere across Japan so please give it a shot!
+            Minoh beer has 6 regular beers and also 7 types of special season
+            beers which are sold only for a limited period of time. Stout is
+            considered to be a representative of Minoh beer and has also won
+            many awards. You can buy Minoh beer anywhere across Japan so please
+            give it a shot!
           </p>
         </ExplanationContainer>
       </Container>

@@ -6,7 +6,7 @@ import YoutubeEmbed from './YoutubeEmbed';
 
 export const ExplanationContainer = styled.div`
   max-width: 600px;
-  max-height: 800px;
+  max-height: 1200px;
   min-width: 50px;
   min-height: 50px;
   align-items: center;

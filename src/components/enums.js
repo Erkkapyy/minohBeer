@@ -144,42 +144,38 @@ export const explanations = [
   {
     hasVideo: true,
     jText:
-      '山に囲まれている箕面市は、昔猿がたくさん住んでいる場所でした。' +
-      '\n' +
-      'そのため、箕面市の代表的な動物は猿となりました。' +
-      '\n' +
-      'したがって、箕面ビールの瓶には可愛いお猿さんがいます。',
-    eText: 'Explanation',
+      '山に囲まれている箕面市は、昔猿がたくさん住んでいる場所でした。そのため、箕面市の代表的な動物は猿となりました。したがって、箕面ビールの瓶には可愛いお猿さんがいます。',
+    eText:
+      'The Minoh City used to be a place where a lot of monkeys lived. Because of that, the monkey became the representative animal of Minoh. Therefore, Minoh beers’ packages also have adorable monkeys on them.',
     videoId: 'hxAVHS1218Y',
   },
   {
     hasVideo: false,
     jText: '説明 2',
-    eText: 'Explanation',
+    eText: 'Explanation TBD',
     videoId: null,
   },
   {
     hasVideo: false,
     jText:
-      '箕面ビールは、大阪府の自然豊かな箕面という市で1996年から生産されています',
-    eText: 'Explanation',
+      '箕面ビールは、大阪府の自然豊かな箕面という市で1996年から生産されています。',
+    eText:
+      'Minoh Beer has been produced in a city rich in nature called Minoh, in Osaka Japan since the year 1996.',
     videoId: null,
   },
   {
     hasVideo: true,
     jText: '箕面ビールは６種と7種の季節限定で販売しています。',
-    eText: 'Explanation',
+    eText:
+      'Minoh beer has 6 regular beers and also 7 types of special season beers which are sold only for a limited period of time.',
     videoId: 'LsIeOHXgY-8',
   },
   {
     hasVideo: true,
     jText:
-      '代表的な味は　箕面ビールスタウトです。' +
-      '\n' +
-      'たくさんの金賞を受賞しています。' +
-      '\n' +
-      '箕面ビールは今日本全国で買えるので、ぜひ飲んで箕面を味わってみてください。',
-    eText: 'Explanation',
+      '代表的な味は　箕面ビールスタウトです。たくさんの金賞を受賞しています。箕面ビールは今日本全国で買えるので、ぜひ飲んで箕面を味わってみてください。',
+    eText:
+      'Stout is considered to be a representative of Minoh beer and has also won many awards. You can buy Minoh beer anywhere across Japan so please give it a shot!',
     videoId: 'PYqHxOgCrNc',
   },
 ];
