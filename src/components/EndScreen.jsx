@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { ExplanationContainer } from './ExplanationScreen';
+import YoutubeEmbed from './YoutubeEmbed';
 
 const Container = styled.div`
   display: grid;
@@ -34,6 +35,7 @@ const EndScreen = ({ score }) => {
             give it a shot!
           </p>
         </ExplanationContainer>
+        <YoutubeEmbed embedId='AU-7mlKn7uc' />
       </Container>
     </>
   );
