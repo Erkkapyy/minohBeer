@@ -11,7 +11,7 @@ export const questions = [
   '質問 1/5: 箕面ビールのマスコットはどれですか？\nWhich one of the following is the Minoh Beer mascot?',
   '質問 2/5: 箕面ビールはどこで作られていますか？\nWhere is Minoh Beer being made?',
   '質問 3/5: 箕面ビールは何年に設立されましたか？\nIn what year was the Minoh Beer company founded?',
-  '質問 4/5: 箕面ビールの種類はいくつありますか？\nHow many types of beer does Minoh Beer have?',
+  '質問 4/5: 箕面ビールはどれくらいの頻度で新しい味を作っていますか？\nHow often does Minoh Beer create beers with new flavours?',
   '質問 5/5: 受賞歴が一番多い箕面ビールはどれですか？\nWhich Minoh Beer received the most awards?',
 ];
 
@@ -85,22 +85,22 @@ export const answers = [
   [
     {
       isImage: false,
-      text: '13',
+      text: '１ヶ月１回\nOnce a month',
       img: null,
     },
     {
       isImage: false,
-      text: '5',
+      text: '２ヶ月１回\nOnce every 2 months',
       img: null,
     },
     {
       isImage: false,
-      text: '10',
+      text: '半年１回\nOnce every 6 months',
       img: null,
     },
     {
       isImage: false,
-      text: '8',
+      text: '１年１回\nOnce a year',
       img: null,
     },
   ],
@@ -128,7 +128,7 @@ export const answers = [
   ],
 ];
 
-export const correctAnswerNumbers = [3, 1, 1, 0, 2];
+export const correctAnswerNumbers = [3, 1, 1, 1, 2];
 
 export const explanations = [
   {
@@ -141,8 +141,10 @@ export const explanations = [
   },
   {
     hasVideo: true,
-    jText: 'この説明は箕面ビール会社にインタビューをしたあとに書きます',
-    eText: 'Explanation TBD',
+    jText:
+      '大阪府の箕面市では、箕面ビールの創業者ともいえるご家族がいます。元々ご家族は居酒屋だけ営業していましたが、毎日飲みたくなるようなビールを作りたいという気持ちで、クラフトビール作りを始めたそうです。心を込めて箕面ビールを作っていらっしゃいます。',
+    eText:
+      'In the city of Minoh in Osaka Prefecture, there is a family that can be considered the founders of Minoh Beer. Originally, the family only operated an izakaya (Japanese style pub), but they wanted to make beer that people would want to drink every day, so they started making craft beer. They have put their heart and soul into making Minoh beer.',
     videoId: 'LGCQOCmOY90',
   },
   {
@@ -155,9 +157,10 @@ export const explanations = [
   },
   {
     hasVideo: true,
-    jText: '箕面ビールは６種と7種の季節限定で販売しています。',
+    jText:
+      '箕面ビールは２ヶ月に一つ新しい味のビールを作るので、今まで100種以上のビールを作ってきました！',
     eText:
-      'Minoh beer has 6 regular beers and also 7 types of special season beers which are sold only for a limited period of time.',
+      "Minoh Beer creates one new flavor of beer every two months, which means that they've created over 100 different beers so far!",
     videoId: 'LsIeOHXgY-8',
   },
   {
