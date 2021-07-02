@@ -148,12 +148,12 @@ export const explanations = [
     videoId: 'LGCQOCmOY90',
   },
   {
-    hasVideo: false,
+    hasVideo: true,
     jText:
-      '箕面ビールは、大阪府の自然豊かな箕面という市で1996年から生産されています。',
+      '箕面ビールは１９９６に、今の経営者、やはたさんのお父さんが始めました。最初は居酒屋していましたが、海外のビールを飲んで、自分たちのビールを作りたいということで、地ビール、クラフトビールを始めるきっかけになりました。',
     eText:
-      'Minoh Beer has been produced in a city rich in nature called Minoh, in Osaka Japan since the year 1996.',
-    videoId: null,
+      'Minoh Beer was started in 1996 by the father of the current owner, Mr. Yahata. At first they were just an izakaya (Japanese style pub), but after drinking beer from overseas, they wanted to start making their own craft beer. This is how beer from overseas became the inspiration for Minoh Beer.',
+    videoId: 'kz36KciMKAU',
   },
   {
     hasVideo: true,
@@ -161,7 +161,7 @@ export const explanations = [
       '箕面ビールは２ヶ月に一つ新しい味のビールを作るので、今まで100種以上のビールを作ってきました！',
     eText:
       "Minoh Beer creates one new flavor of beer every two months, which means that they've created over 100 different beers so far!",
-    videoId: 'LsIeOHXgY-8',
+    videoId: 'T2AjR32OLKE',
   },
   {
     hasVideo: true,
