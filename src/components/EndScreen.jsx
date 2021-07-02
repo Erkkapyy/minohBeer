@@ -39,7 +39,7 @@ const EndScreen = ({ score }) => {
             give it a shot!
           </p>
         </ExplanationContainer>
-        <YoutubeEmbed embedId='AU-7mlKn7uc' />
+        <YoutubeEmbed embedId='jo4Zo-bKlHk' />
       </Container>
     </>
   );
